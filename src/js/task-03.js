@@ -16,9 +16,9 @@ const images = [
 const gallery = document.querySelector("ul.gallery");
 
 
-const galleryImages = images.forEach(e => {
+const galleryImages = images.forEach(event => {
   gallery.insertAdjacentHTML("afterbegin", `<li class="image">
-  <img src=${e.url} alt=${e.alt} width="600px" />
+  <img src=${event.url} alt=${event.alt} width="600px" />
   </li> `)
 });
 
@@ -31,10 +31,10 @@ gallery.style.gap = "50px";
 
 const galleryPicture = document.querySelectorAll("li.image > img");
 
-galleryPicture.forEach( e => {
-  e.style.borderStyle = "solid";
-  e.style.borderWidth = "10px";
-  e.style.borderColor = "black";
-  e.classList.add = "picture";
-  e.style.borderRadius = "40%";
+galleryPicture.forEach( event => {
+  event.style.borderStyle = "solid";
+  event.style.borderWidth = "10px";
+  event.style.borderColor = "black";
+  event.classList.add = "picture";
+  event.style.borderRadius = "40%";
 });

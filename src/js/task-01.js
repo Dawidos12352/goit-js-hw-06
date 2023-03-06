@@ -18,7 +18,7 @@ console.log(`Elements: ${document.body.querySelectorAll("ul")[3].childElementCou
 
 const numberOfCategories = document.querySelectorAll('#categories > li.item');
 console.log(`Number of categories: ${numberOfCategories.length}`);
-numberOfCategories.forEach( e => {
-    console.log(`Category: ${e.firstElementChild.textContent}`);
-    console.log(`Elements: ${e.lastElementChild.children.length}`);
+numberOfCategories.forEach( event => {
+    console.log(`Category: ${event.firstElementChild.textContent}`);
+    console.log(`Elements: ${event.lastElementChild.children.length}`);
 });

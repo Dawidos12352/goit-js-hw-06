@@ -10,9 +10,9 @@ const ingredients = [
 
 const listOfIngredients = document.querySelector("ul#ingredients");
 
-const listItems = ingredients.map( e =>{
+const listItems = ingredients.map( event =>{
     const listItem = document.createElement("li");
-    listItem.textContent = e;
+    listItem.textContent = event;
     listItem.classList.add("item");
     return listItem;
 });
