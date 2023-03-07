@@ -1,10 +1,11 @@
-const numberOfCategories = document.querySelectorAll("ul#categories > li");
-console.log(`Number of categories: ${numberOfCategories.length}`);
+const countOfCategories = document.querySelectorAll("ul#categories>li.item");
+console.log(`Number of categories: ${countOfCategories.length}`);
 
-const subCategories = numberOfCategories.forEach( event => {
+const itemOfCategories = countOfCategories.forEach( event => {
     console.log(`Category: ${event.firstElementChild.textContent}`);
     console.log(`Elements: ${event.lastElementChild.childElementCount}`);
 });
+
 
 //without loop
 /*
